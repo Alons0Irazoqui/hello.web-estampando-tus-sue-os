@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estampando Tus Sueños | Serigrafía, Sublimación y Publicidad Impresa</title>
+  <meta name="description" content="Serigrafía, sublimación, corte de vinil, lonas publicitarias, vinil adhesivo, micro perforado, mochilas y cuadros con calidad fotográfica. Cotiza tu proyecto por WhatsApp — envíos a todo México.">
+  <meta name="keywords" content="serigrafia, sublimacion, lona publicitaria, vinil adhesivo, corte de vinil, microperforado, mochilas personalizadas, cuadros con calidad fotografica, estampado de playeras, publicidad impresa, sociedad cooperativa">
+  <meta property="og:title" content="Estampando Tus Sueños | Estampado, Sublimación y Publicidad Impresa">
+  <meta property="og:description" content="Del boceto al estampado: playeras, mochilas, lonas, vinil y cuadros con calidad fotográfica. Cotiza por WhatsApp.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════════
+       LOADER
+  ══════════════════════════════════════════════════════ -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-bulb">
+      <i class="fa-solid fa-stamp"></i>
+    </div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    <span class="loader-text">Preparando tu estampado...</span>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════════════════ -->
+  <header id="navbar" role="banner">
+    <div class="container">
+      <div class="nav-inner">
+
+        <a href="#hero" class="nav-logo" aria-label="Estampando Tus Sueños — inicio">
+          <div class="nav-logo-icon" aria-hidden="true">
+            <i class="fa-solid fa-stamp"></i>
+          </div>
+          <div class="nav-logo-copy">
+            <span>Estampando</span>
+            <span>Tus Sueños</span>
+          </div>
+        </a>
+
+        <nav aria-label="Navegación principal">
+          <ul class="nav-links">
+            <li><a href="#why">Nosotros</a></li>
+            <li><a href="#ambientes">Servicios</a></li>
+            <li><a href="#galeria">Trabajos</a></li>
+            <li><a href="#producto">Marcos HD</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <a href="#contacto" class="btn-gold nav-cta" style="font-size:13px; padding:12px 26px;">
+          Solicitar Cotización
+        </a>
+
+        <button class="hamburger" id="hamburger"
+                aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mob-menu" aria-label="Menú móvil">
+      <a href="#why">Nosotros</a>
+      <a href="#ambientes">Servicios</a>
+      <a href="#galeria">Trabajos</a>
+      <a href="#producto">Marcos HD</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#contacto">Solicitar Cotización →</a>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════════════════ -->
+  <main>
+    <section id="hero" aria-labelledby="hero-heading">
+
+      <!-- Parallax background image (fixed) -->
+      <div class="hero-bg" aria-hidden="true"></div>
+      <!-- Dark overlays -->
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <!-- Grid texture -->
+      <div class="hero-grid" aria-hidden="true"></div>
+      <!-- Canvas particle orbs -->
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+      <!-- Light shafts -->
+      <div class="hero-rays" aria-hidden="true">
+        <div class="hero-ray r1"></div>
+        <div class="hero-ray r2"></div>
+        <div class="hero-ray r3"></div>
+        <div class="hero-ray r4"></div>
+        <div class="hero-ray r5"></div>
+      </div>
+      <!-- Film grain overlay -->
+      <div class="hero-grain" aria-hidden="true"></div>
+      <!-- One-shot scan reveal -->
+      <div class="hero-scanline" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content">
+
+          <!-- Live badge -->
+          <div class="hero-badge" id="hero-badge" aria-hidden="true">
+            <div class="badge-dot"></div>
+            Serigrafía · Sublimación · Publicidad Impresa
+          </div>
+
+          <!-- Animated title -->
+          <h1 class="hero-title" id="hero-heading">
+            <span class="line"><span>Estampamos</span></span>
+            <span class="line"><span>tus sueños en</span></span>
+            <span class="line"><span class="accent">cada superficie.</span></span>
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="hero-sub" id="hero-sub">
+            Serigrafía, sublimación, corte de vinil, lonas publicitarias y mochilas — con <strong>calidad fotográfica</strong> y acabados que se notan. Tú traes la idea, nosotros la imprimimos contigo.
+          </p>
+
+          <!-- CTAs -->
+          <div class="hero-ctas" id="hero-ctas">
+            <a href="https://wa.me/525547240835?text=Hola%2C%20me%20gustar%C3%ADa%20cotizar%20un%20proyecto%20de%20estampado." target="_blank" rel="noopener noreferrer" class="btn-gold">
+              Cotizar por WhatsApp
+              <i class="fa-solid fa-arrow-right" style="font-size:12px;"></i>
+            </a>
+            <a href="#galeria" class="btn-outline">
+              <i class="fa-regular fa-images" style="font-size:15px; color:var(--gray);"></i>
+              Ver Trabajos Realizados
+            </a>
+          </div>
+
+          <!-- Trust bar -->
+          <div class="hero-trust" id="hero-trust" aria-label="Credenciales">
+            <div class="trust-item">
+              <i class="fa-solid fa-shield-halved"></i>
+              Calidad fotográfica garantizada
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-industry"></i>
+              Equipo de producción profesional
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-truck-fast"></i>
+              Envíos a todo México
+            </div>
+          </div>
+
+        </div><!-- /.hero-content -->
+      </div>
+
+      <!-- Scroll cue -->
+      <div class="scroll-cue" aria-hidden="true">
+        <div class="scroll-mouse">
+          <div class="scroll-mouse-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         MARQUEE
+    ══════════════════════════════════════════════════ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-inner" id="marquee"></div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════
+         WHY — Features
+    ══════════════════════════════════════════════════ -->
+    <section id="why" aria-labelledby="why-heading">
+      <div class="container">
+
+        <div class="why-header">
+          <div class="reveal">
+            <div class="label">La diferencia</div>
+            <h2 class="why-quote" id="why-heading">
+              Cualquiera puede imprimir un diseño…
+              <em> nosotros lo convertimos en algo que se nota y se presume.</em>
+            </h2>
+          </div>
+          <p class="why-sub reveal d2">
+            Somos una Sociedad Cooperativa: un taller cercano que combina equipo de producción profesional con atención directa, para que cada playera, cuadro, lona o mochila salga exactamente como la imaginaste.
+          </p>
+        </div>
+
+        <div class="features-grid">
+
+          <div class="f-card reveal">
+            <div class="f-num" aria-hidden="true">01</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-image"></i>
+            </div>
+            <h3>Calidad Fotográfica</h3>
+            <p>Cuadros, lonas y sublimados con nitidez y color reales, sin pixelación ni deslavados prematuros.</p>
+          </div>
+
+          <div class="f-card reveal d1">
+            <div class="f-num" aria-hidden="true">02</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-industry"></i>
+            </div>
+            <h3>Tecnología Profesional</h3>
+            <p>Impresión de gran formato, sublimación y corte de vinil con equipo industrial, no artesanal casero.</p>
+          </div>
+
+          <div class="f-card reveal d2">
+            <div class="f-num" aria-hidden="true">03</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-palette"></i>
+            </div>
+            <h3>100% Personalizado</h3>
+            <p>Tu diseño, tu logo o tu foto — en playera, taza, madera, vidrio, tela o el material que imagines.</p>
+          </div>
+
+          <div class="f-card reveal d3">
+            <div class="f-num" aria-hidden="true">04</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-handshake"></i>
+            </div>
+            <h3>Cooperativa de Confianza</h3>
+            <p>Trato directo, honesto y de acompañamiento en cada pedido, del boceto a la entrega final.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         AMBIENTES — Tipos de luz
+    ══════════════════════════════════════════════════ -->
+    <section id="ambientes" aria-labelledby="amb-heading">
+      <div class="container">
+
+        <div class="ambientes-top">
+          <div class="reveal">
+            <div class="label">Nuestros Servicios</div>
+            <h2 class="section-title" id="amb-heading">
+              Una técnica distinta<br>
+              <span class="gold">para cada proyecto</span>
+            </h2>
+            <p style="color:var(--gray); margin-top:16px; font-size:15.5px; max-width:440px; line-height:1.7;">
+              Serigrafía, sublimación, gran formato y corte de vinil — trabajados con el proceso correcto según tu material y objetivo.
+            </p>
+          </div>
+          <div class="reveal d2">
+            <span class="ambiente-pill">¿Cuál necesitas?</span>
+          </div>
+        </div>
+
+        <div class="ambientes-grid">
+
+          <!-- Serigrafía y sublimación en prendas -->
+          <div class="amb-card reveal">
+            <img class="amb-img"
+              src="imagenes/promo-playeras-sublimacion.jpg"
+              alt="Playeras estampadas con serigrafía y sublimación de diseños full print">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(255,61,142,0.15); border-color:rgba(255,61,142,0.4);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-shirt" style="color:#ff8bb8;"></i>
+              </div>
+              <h3>Serigrafía &amp; Sublimación</h3>
+              <p>Playeras, gorras y prendas con estampado de alta definición, colores vivos y estampa duradera.</p>
+              <div class="amb-temp">Ideal para uniformes, moda y regalos</div>
+            </div>
+          </div>
+
+          <!-- Lonas, bolsas y vinil publicitario -->
+          <div class="amb-card reveal d1">
+            <img class="amb-img"
+              src="imagenes/produccion-lona-taimes.jpg"
+              alt="Producción de lona publicitaria de gran formato en impresora industrial">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(62,123,250,0.15); border-color:rgba(62,123,250,0.4);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-shop" style="color:#8fb3ff;"></i>
+              </div>
+              <h3>Lonas &amp; Publicidad Impresa</h3>
+              <p>Lonas, bolsas, vinil adhesivo y micro perforado para anunciar y vestir tu negocio.</p>
+              <div class="amb-temp">Ideal para negocios y comercios</div>
+            </div>
+          </div>
+
+          <!-- Marcos con calidad fotográfica -->
+          <div class="amb-card reveal d2">
+            <img class="amb-img"
+              src="imagenes/cuadro-fauna-tigre-pantera-leon.jpg"
+              alt="Cuadro tríptico con calidad fotográfica sobre lienzo">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(255,159,90,0.15); border-color:rgba(255,159,90,0.4);"
+                   aria-hidden="true">
+                <i class="fa-regular fa-image" style="color:#ffc79a;"></i>
+              </div>
+              <h3>Marcos con Calidad Fotográfica</h3>
+              <p>Cuadros sencillos, dípticos o trípticos con resolución e impresión de nivel galería.</p>
+              <div class="amb-temp">Ideal para decoración y regalos</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         PROCESO — How we work
+    ══════════════════════════════════════════════════ -->
+    <section id="proceso" aria-labelledby="proceso-heading">
+      <div class="container">
+
+        <div class="proceso-header reveal">
+          <div class="label">Cómo trabajamos</div>
+          <h2 class="section-title" id="proceso-heading">
+            Simple, rápido y <span class="gold">sin complicaciones</span>
+          </h2>
+          <p>De tu idea al producto terminado, te acompañamos por WhatsApp en cada paso del proceso.</p>
+        </div>
+
+        <div class="proceso-grid">
+
+          <div class="proceso-step reveal">
+            <div class="step-number">Paso 01</div>
+            <h3>Cuéntanos tu Idea</h3>
+            <p>Envíanos tu diseño, foto o boceto por WhatsApp. Si no tienes uno, te ayudamos a crearlo desde cero.</p>
+          </div>
+
+          <div class="proceso-step reveal d1">
+            <div class="step-number">Paso 02</div>
+            <h3>Cotización al Instante</h3>
+            <p>Te damos un precio claro según material, tamaño y cantidad — sin sorpresas ni letras chiquitas.</p>
+          </div>
+
+          <div class="proceso-step reveal d2">
+            <div class="step-number">Paso 03</div>
+            <h3>Producción &amp; Entrega</h3>
+            <p>Imprimimos con equipo profesional y te entregamos o enviamos a cualquier punto de México.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         PRODUCTO ESTRELLA
+    ══════════════════════════════════════════════════ -->
+    <section id="producto" aria-labelledby="prod-heading">
+      <div class="container">
+        <div class="producto-wrap">
+
+          <!-- Info -->
+          <div class="reveal">
+            <div class="label">Producto Destacado</div>
+            <h2 class="section-title" id="prod-heading">
+              Marcos con calidad<br>
+              <span class="gold">fotográfica, para presumir</span>
+            </h2>
+            <p class="producto-lead">
+              Tu foto favorita, una obra digital o el diseño que imagines, impreso sobre lienzo con nitidez y color de nivel galería — listo para colgar.
+            </p>
+
+            <ul class="feature-rows" aria-label="Características de los marcos con calidad fotográfica">
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                <div>
+                  <h4>Impresión Full HD</h4>
+                  <p>Colores vivos y detalle nítido en cada cuadro, sin pixelación.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-layer-group"></i></div>
+                <div>
+                  <h4>Materiales Duraderos</h4>
+                  <p>Lienzo y bastidor de calidad, resistentes al tiempo y sin decolorarse.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-expand"></i></div>
+                <div>
+                  <h4>Múltiples Formatos</h4>
+                  <p>Cuadro sencillo, díptico, tríptico o sets de varias piezas — tú eliges.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-regular fa-image"></i></div>
+                <div>
+                  <h4>100% Personalizado</h4>
+                  <p>Tu foto, tu arte o tu personaje favorito, listo para colgar en casa u oficina.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="specs-bar" role="list" aria-label="Características de los marcos fotográficos">
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">Full HD</span>
+                <span class="spec-name">Resolución</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">1 a 5</span>
+                <span class="spec-name">Piezas por Set</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">100%</span>
+                <span class="spec-name">Personalizado</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">Todo México</span>
+                <span class="spec-name">Envíos</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visual -->
+          <div class="reveal d2">
+            <div class="panel-scene">
+              <div class="led-panel-body art"
+                   style="background-image:url('imagenes/cuadro-tiburon-arte.jpg'); background-size:cover; background-position:center;"
+                   role="img" aria-label="Cuadro con arte digital de tiburón impreso en calidad fotográfica">
+              </div>
+              <div class="p-badge pb-tl" aria-hidden="true">
+                <div class="p-badge-dot"></div>
+                Lienzo — Listo para colgar
+              </div>
+              <div class="p-badge pb-br" aria-hidden="true">
+                <i class="fa-solid fa-camera-retro" style="color:var(--gold);"></i>
+                Calidad Fotográfica
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         STATS
+    ══════════════════════════════════════════════════ -->
+    <section id="stats" aria-label="Estadísticas clave">
+      <div class="container">
+        <div class="stats-grid reveal" role="list">
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="8" data-suffix=""
+                 aria-label="8 servicios">0</div>
+            <div class="stat-lbl">Servicios de estampado<br>y publicidad impresa</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="5" data-suffix="+"
+                 aria-label="Más de 5">0</div>
+            <div class="stat-lbl">Superficies: tela, madera,<br>vidrio, papel y más</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="100" data-suffix="%"
+                 aria-label="100%">0</div>
+            <div class="stat-lbl">Diseños personalizados<br>a tu medida</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num" aria-label="Calidad HD">HD</div>
+            <div class="stat-lbl">Calidad fotográfica en<br>cuadros y lonas</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         SECTORES
+    ══════════════════════════════════════════════════ -->
+    <section id="sectores" aria-labelledby="sec-heading">
+      <div class="container">
+
+        <div class="sectores-hdr reveal">
+          <div class="label">Para quién trabajamos</div>
+          <h2 class="section-title" id="sec-heading">
+            Ideal para <span class="gold">cada proyecto</span>
+          </h2>
+          <p>De negocios locales a regalos personales, tenemos la técnica adecuada para ti.</p>
+        </div>
+
+        <div class="sectores-grid" role="list">
+          <div class="sector-card reveal" role="listitem">
+            <i class="fa-solid fa-store sector-icon" aria-hidden="true"></i>
+            <h3>Negocios y Comercios</h3>
+          </div>
+          <div class="sector-card reveal d1" role="listitem">
+            <i class="fa-solid fa-briefcase sector-icon" aria-hidden="true"></i>
+            <h3>Marcas y Emprendedores</h3>
+          </div>
+          <div class="sector-card reveal d2" role="listitem">
+            <i class="fa-solid fa-people-group sector-icon" aria-hidden="true"></i>
+            <h3>Escuelas y Equipos</h3>
+          </div>
+          <div class="sector-card reveal d3" role="listitem">
+            <i class="fa-solid fa-gifts sector-icon" aria-hidden="true"></i>
+            <h3>Eventos y Fiestas</h3>
+          </div>
+          <div class="sector-card reveal d4" role="listitem">
+            <i class="fa-solid fa-house sector-icon" aria-hidden="true"></i>
+            <h3>Hogar y Decoración</h3>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         GALERÍA — Trabajos realizados
+    ══════════════════════════════════════════════════ -->
+    <section id="galeria" aria-labelledby="gal-heading">
+      <div class="container">
+
+        <div class="sectores-hdr reveal">
+          <div class="label">Trabajos Realizados</div>
+          <h2 class="section-title" id="gal-heading">
+            Proyectos reales, <span class="gold">clientes reales</span>
+          </h2>
+          <p>Una muestra de lo que hemos estampado, sublimado e impreso para negocios y familias.</p>
+        </div>
+
+        <div class="galeria-grid" role="list">
+
+          <div class="amb-card gal-card reveal" role="listitem">
+            <img class="amb-img" src="imagenes/cuadro-fauna-tigre-pantera-leon.jpg"
+                 alt="Cuadro tríptico de tigre, pantera y león con calidad fotográfica">
+            <div class="amb-overlay">
+              <h3>Cuadro Tríptico — Fauna</h3>
+              <p>Marcos con calidad fotográfica</p>
+            </div>
+          </div>
+
+          <div class="amb-card gal-card reveal d1" role="listitem">
+            <img class="amb-img" src="imagenes/cuadro-frutas-manzanas.jpg"
+                 alt="Cuadro tríptico de manzanas estilo naturaleza muerta">
+            <div class="amb-overlay">
+              <h3>Cuadro Tríptico — Naturaleza Muerta</h3>
+              <p>Marcos con calidad fotográfica</p>
+            </div>
+          </div>
+
+          <div class="amb-card gal-card reveal d2" role="listitem">
+            <img class="amb-img" src="imagenes/cuadro-tiburon-arte.jpg"
+                 alt="Cuadro de arte digital de tiburón impreso en lienzo">
+            <div class="amb-overlay">
+              <h3>Cuadro Arte Digital</h3>
+              <p>Impresión en lienzo de gran formato</p>
+            </div>
+          </div>
+
+          <div class="amb-card gal-card reveal d3" role="listitem">
+            <img class="amb-img" src="imagenes/cuadro-goku-multipanel.jpg"
+                 alt="Cuadro de anime en cinco piezas impreso en lienzo">
+            <div class="amb-overlay">
+              <h3>Set de 5 Piezas — Anime</h3>
+              <p>Marcos multi-panel a la medida</p>
+            </div>
+          </div>
+
+          <div class="amb-card gal-card reveal" role="listitem">
+            <img class="amb-img" src="imagenes/produccion-lona-taimes.jpg"
+                 alt="Producción de lona publicitaria en impresora industrial de gran formato">
+            <div class="amb-overlay">
+              <h3>Producción en Planta</h3>
+              <p>Impresión de gran formato profesional</p>
+            </div>
+          </div>
+
+          <div class="amb-card gal-card reveal d1" role="listitem">
+            <img class="amb-img" src="imagenes/lona-publicitaria-tacos-dona-eve.jpg"
+                 alt="Lona publicitaria impresa para negocio de tacos de guisado">
+            <div class="amb-overlay">
+              <h3>Lona Publicitaria</h3>
+              <p>Anuncio a todo color para negocio local</p>
+            </div>
+          </div>
+
+          <div class="amb-card gal-card reveal d2" role="listitem">
+            <img class="amb-img" src="imagenes/bolsa-publicitaria-abarrotes-la-guera.jpg"
+                 alt="Bolsa publicitaria personalizada impresa para tienda de abarrotes">
+            <div class="amb-overlay">
+              <h3>Bolsa Publicitaria</h3>
+              <p>Diseño e impresión personalizada</p>
+            </div>
+          </div>
+
+          <div class="amb-card gal-card reveal d3" role="listitem">
+            <img class="amb-img" src="imagenes/bolsa-publicitaria-verduleria-lupita.jpg"
+                 alt="Bolsa publicitaria personalizada impresa para verdulería">
+            <div class="amb-overlay">
+              <h3>Bolsa Publicitaria</h3>
+              <p>Diseño e impresión personalizada</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         CONTACTO
+    ══════════════════════════════════════════════════ -->
+    <section id="contacto" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <div class="contact-hdr reveal">
+          <div class="label">Contacto</div>
+          <h2 class="section-title" id="contact-heading">
+            Hablemos de <span class="gold">tu proyecto</span>
+          </h2>
+          <p>Cotiza gratis por WhatsApp. Te respondemos directo, sin intermediarios.</p>
+        </div>
+
+        <div class="contact-box reveal">
+
+          <!-- Info panel -->
+          <div class="contact-info">
+            <h3>Atención Personalizada</h3>
+            <p class="ci-sub">Somos una Sociedad Cooperativa — trato directo y de confianza en cada pedido.</p>
+
+            <ul class="ci-list">
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Ubicación</h4>
+                  <p>Consulta nuestro taller en el mapa,<br>aquí abajo.</p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Teléfonos</h4>
+                  <p>
+                    <a href="tel:5547240835">55 4724 0835</a><br>
+                    <a href="tel:5528869015">55 2886 9015</a>
+                  </p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Correo</h4>
+                  <p><a href="mailto:estampandotussuenos@gmail.com">estampandotussuenos@gmail.com</a></p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>WhatsApp</h4>
+                  <p>Escríbenos y cotizamos en minutos.</p>
+                  <a href="https://wa.me/525547240835" target="_blank"
+                     rel="noopener noreferrer" class="ci-wa-link">
+                    Abrir chat →
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div><!-- /.contact-info -->
+
+          <!-- Form -->
+          <div class="contact-form-wrap">
+            <h3>Solicitar Cotización</h3>
+            <form id="wa-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="f-name">Nombre completo</label>
+                  <input type="text" id="f-name" class="form-control"
+                         placeholder="Ej. Nombre Apellido" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="f-interest">¿Qué necesitas?</label>
+                  <select id="f-interest" class="form-control">
+                    <option>Cotización general</option>
+                    <option>Serigrafía</option>
+                    <option>Sublimación</option>
+                    <option>Corte de vinil / Vinil adhesivo</option>
+                    <option>Lona publicitaria / Micro perforado</option>
+                    <option>Mochilas personalizadas</option>
+                    <option>Marcos con calidad fotográfica</option>
+                    <option>Bolsas publicitarias</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="f-msg">Detalle del proyecto</label>
+                <textarea id="f-msg" class="form-control" rows="4" required
+                          placeholder="Describe el material, tamaño, cantidad o cualquier detalle de tu diseño…"></textarea>
+              </div>
+              <button type="submit" class="form-submit">
+                <i class="fa-brands fa-whatsapp"></i>
+                Solicitar Cotización
+              </button>
+              <p class="form-note">
+                Al enviar serás redirigido a WhatsApp para continuar la conversación.
+              </p>
+            </form>
+          </div>
+
+        </div><!-- /.contact-box -->
+
+        <!-- Ubicación -->
+        <div class="map-embed reveal">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3763.168664417246!2d-98.91416012478635!3d19.405117181868427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDI0JzE4LjQiTiA5OMKwNTQnNDEuNyJX!5e0!3m2!1ses!2smx!4v1783544259366!5m2!1ses!2smx"
+            width="100%" height="450" style="border:0;" allowfullscreen=""
+            loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+            title="Ubicación de Estampando Tus Sueños en el mapa">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <i class="fa-solid fa-stamp"></i>
+          <span>Estampando Tus Sueños</span>
+        </div>
+        <p class="footer-copy">
+          &copy; <span id="year"></span> Estampando Tus Sueños — Sociedad Cooperativa. Todos los derechos reservados.
+        </p>
+        <div class="footer-socials">
+          <a href="mailto:estampandotussuenos@gmail.com"
+             class="footer-soc" aria-label="Correo electrónico">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          <a href="https://wa.me/525547240835" target="_blank"
+             rel="noopener noreferrer" class="footer-soc" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════════════════
+       FLOATING WHATSAPP
+  ══════════════════════════════════════════════════════ -->
+  <a href="https://wa.me/525547240835?text=Hola%2C%20visit%C3%A9%20su%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n."
+     target="_blank" rel="noopener noreferrer"
+     class="wa-btn" aria-label="Contactar por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
