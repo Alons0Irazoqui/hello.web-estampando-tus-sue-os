@@ -166,11 +166,11 @@
       this.vx = (Math.random() - 0.5) * 0.38;
       this.vy = (Math.random() - 0.5) * 0.32;
       const palette = [
-        [255,  61, 142, 0.048],
-        [255, 159,  90, 0.05 ],
-        [255, 255, 255, 0.018],
-        [ 62, 123, 250, 0.022],
-        [255, 105, 180, 0.03 ],
+        [255, 122,  26, 0.05 ],
+        [255, 201,  60, 0.055],
+        [155, 212,   0, 0.04 ],
+        [255, 168,  92, 0.045],
+        [255, 145,  60, 0.04 ],
       ];
       const [r,g,b,a] = palette[Math.floor(Math.random() * palette.length)];
       this.color = `rgba(${r},${g},${b},${a})`;
@@ -199,7 +199,7 @@
       this.size = Math.random() * 1.7 + 0.45;
       this.life  = startY !== null ? Math.random() : 1;
       this.decay = Math.random() * 0.003 + 0.0014;
-      this.hue   = Math.random() * 25 + 325;
+      this.hue   = Math.random() * 30 + 25;
     }
     tick() {
       this.x += this.vx; this.y += this.vy; this.life -= this.decay;
@@ -209,7 +209,7 @@
       const a = this.life * 0.68;
       const r = this.size * 3.8;
       const g = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, r);
-      g.addColorStop(0, `hsla(${this.hue},100%,86%,${a})`);
+      g.addColorStop(0, `hsla(${this.hue},100%,55%,${a})`);
       g.addColorStop(1, 'rgba(0,0,0,0)');
       ctx.beginPath(); ctx.arc(this.x, this.y, r, 0, Math.PI * 2);
       ctx.fillStyle = g; ctx.fill();
@@ -228,7 +228,7 @@
 
   function drawFrame() {
     ctx.clearRect(0, 0, W, H);
-    ctx.globalCompositeOperation = 'screen';
+    ctx.globalCompositeOperation = 'multiply';
     orbs.forEach(o => { o.tick(); o.draw(); });
     ctx.globalCompositeOperation = 'source-over';
     raf = requestAnimationFrame(drawFrame);
@@ -275,7 +275,7 @@
 
     /* Canvas drawing */
     ctx.clearRect(0, 0, W, H);
-    ctx.globalCompositeOperation = 'screen';
+    ctx.globalCompositeOperation = 'multiply';
 
     orbs.forEach(o => { o.tick(); o.draw(); });
     sparks.forEach(s => { s.tick(); s.draw(); });
@@ -283,8 +283,8 @@
     /* Cursor spotlight */
     if (glowX > 0) {
       const cg = ctx.createRadialGradient(glowX, glowY, 0, glowX, glowY, 380);
-      cg.addColorStop(0,   'rgba(255,61,142,0.12)');
-      cg.addColorStop(0.4, 'rgba(255,61,142,0.045)');
+      cg.addColorStop(0,   'rgba(255,122,26,0.14)');
+      cg.addColorStop(0.4, 'rgba(255,122,26,0.05)');
       cg.addColorStop(1,   'rgba(0,0,0,0)');
       ctx.beginPath();
       ctx.arc(glowX, glowY, 380, 0, Math.PI * 2);
